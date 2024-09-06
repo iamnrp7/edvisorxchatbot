@@ -6,8 +6,11 @@ export function EmptyScreen() {
       <div className="flex flex-col gap-2 rounded-2xl bg-zinc-50 sm:p-8 p-4 text-sm sm:text-base">
         <h1 className="text-2xl sm:text-3xl tracking-tight font-semibold max-w-fit inline-block">
           Edvisor ChatBot
-          TEAM NaKsHtrA
+          
         </h1>
+        <h2>
+          TEAM NaKsHtrA
+        </h2>
     
       </div>
     </div>
