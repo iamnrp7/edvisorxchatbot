@@ -165,6 +165,16 @@ async function submitUserMessage(content: string) {
         model: google('models/gemini-1.5-flash'),
         temperature: 0,
         tools: {
+           suggestGifts: {
+    description: 'Suggest gifts based on user preferences like occasion, relationship, age, gender, and budget.',
+    parameters: z.object({
+      age: z.string(),
+      gender: z.string(),
+      relationship: z.string(),
+      occasion: z.string(),
+      budget: z.number(),
+    })
+  },
           showFlights: {
             description:
               "List available flights in the UI. List 3 that match user's query.",
